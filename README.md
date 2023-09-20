@@ -83,6 +83,9 @@ Before running this API, make sure you have the following set up:
    ```
    OPENAI_API_KEY=your_openai_api_key_here
    ```
+   OR
+
+   Copy the content from  `.env.example` and replace the text with your API key.
 
 4. Start the API server using `uvicorn`:
    ```shell
