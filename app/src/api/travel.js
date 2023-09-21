@@ -4,7 +4,7 @@ import axios from 'axios';
 export default class Travel extends Abstract {
   constructor() {
     super();
-    this.constants.ENDPOINT = `${this.constants.API_URL}/travel-recommendations`;
+    this.constants.ENDPOINT = `${this.constants.API_URL}/travel-recommendations/`;
     this.data = null;
   }
 

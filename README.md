@@ -92,7 +92,7 @@ Before running this API, make sure you have the following set up:
    uvicorn main:app --reload
    ```
 
-5. The API will be accessible at [http://localhost:3000](http://localhost:3000).
+5. The API will be accessible at [http://localhost:5000](http://localhost:5000).
 
 ### API Endpoints
 
@@ -106,6 +106,12 @@ Before running this API, make sure you have the following set up:
 #### Example Request
 ```http
 GET /travel-recommendations?country=italy&season=summer
+```
+
+#### Swagger docs
+You can access the swagger docs on below url
+```
+http://localhost:5000/docs
 ```
 
 #### Example Response

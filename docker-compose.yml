@@ -1,0 +1,16 @@
+version: '3'
+services: 
+    api:
+        build:
+            context: ./api/
+            dockerfile: ./Dockerfile
+        container_name: "ai-piping-BE"
+        ports: 
+            - "5000:5000"
+    app:
+        build:
+            context: ./app/
+            dockerfile: ./Dockerfile
+        container_name: "ai-piping-FE"
+        ports:
+            - "3000:3000"

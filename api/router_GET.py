@@ -7,6 +7,7 @@ router = APIRouter()
 
 openai.api_key = openai_api_key
 
+
 """
 Generate travel recommendations for a given country and season.
 
@@ -34,7 +35,7 @@ async def travel_recommendations(
     country: str,
     season: str = Depends(validate_season),
 ):
-    country = country.lower()
+    # country = country.lower()
     prompt = f"Recommend list of only top 3 things to do in {country} during {season}."
 
     response = openai.Completion.create(
